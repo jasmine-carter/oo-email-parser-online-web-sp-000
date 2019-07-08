@@ -15,8 +15,8 @@ attr_accessor :emails
   end
 
   def parse
-    parsed_list = @emails.split(",")
-    #parsed_list.reject{|i| i = ""}
+    parsed_list = @emails.split(",").strip
+
   end
 
 
