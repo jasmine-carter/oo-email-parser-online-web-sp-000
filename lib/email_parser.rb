@@ -4,11 +4,8 @@
 # or whitespace (' ').
 class EmailParser
 
-  def initialize
-    self.new
-  end
-
   def parse(email_list)
+    self.new
     email_list.split(/[, \s]/)
   end
 #it separates emails into a comma seperated list
