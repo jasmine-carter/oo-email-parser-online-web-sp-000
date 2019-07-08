@@ -9,7 +9,7 @@ attr_accessor :emails
     @emails = email_list
   end
 
-  def parse(email_list)
+  def parse(emails)
     email_list.split(/[, \s]/)
   end
 #it separates emails into a comma seperated list
