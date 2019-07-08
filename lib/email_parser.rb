@@ -6,7 +6,7 @@ class EmailParser
 
 
   def initialize(email_list)
-    self = email_list.split(/[, \s]/)
+    email_list.split(/[, \s]/)
   end
 #it separates emails into a comma seperated list
 # and puts them into an array
