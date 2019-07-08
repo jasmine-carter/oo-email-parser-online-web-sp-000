@@ -10,7 +10,6 @@ attr_accessor :emails
   end
 
   def parse(email_list)
-    self.new
     email_list.split(/[, \s]/)
   end
 #it separates emails into a comma seperated list
