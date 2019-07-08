@@ -5,15 +5,20 @@
 class EmailParser
 attr_accessor :emails
 
+#requires to be initialized with a collection of emails
+#create a new instance of parser
+  #parser instances are created by passing collection of emails
+#call the parse method on that instance of parser
+
   def initialize(email_list)
     @emails = email_list
   end
 
-  def parse(emails)
-    email_list.split(/[, \s]/)
+  def parse
+    parsed_list = @email.split(/[, \s]/)
+    parse_list
   end
-#it separates emails into a comma seperated list
-# and puts them into an array
+
 
 
 end
