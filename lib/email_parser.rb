@@ -19,8 +19,8 @@ attr_accessor :emails
       parsed_list = @emails.split(", ")
     else
       parsed_list = @emails.split(" ")
-    parsed_list  
-
+    parsed_list
+    end
   end
 
 
