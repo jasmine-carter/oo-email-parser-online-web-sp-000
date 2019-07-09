@@ -17,6 +17,7 @@ attr_accessor :emails
   def parse
     parsed_list = @emails.split(/[\s, ', ']/)
     parsed_list.delete_if{|a| a == ""}
+    parsed_list.uniq
   end
 
 
