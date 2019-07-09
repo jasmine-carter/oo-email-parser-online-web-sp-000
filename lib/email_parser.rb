@@ -22,6 +22,7 @@ attr_accessor :emails
     parsed_list
 
     parsed_list = @emails.split(/[\s, ', ']/)
+    parsed_list.delete_if{|a| a == ""}
     end
   end
 
