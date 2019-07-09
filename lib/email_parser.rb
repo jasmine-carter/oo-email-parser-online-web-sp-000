@@ -20,6 +20,8 @@ attr_accessor :emails
     else
       parsed_list = @emails.split(" ")
     parsed_list
+
+    parsed_list = @emails.split(/[\s, ', ']/)
     end
   end
 
