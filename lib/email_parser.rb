@@ -15,12 +15,6 @@ attr_accessor :emails
   end
 
   def parse
-    if @emails.include? ", "
-      parsed_list = @emails.split(", ")
-    else
-      parsed_list = @emails.split(" ")
-    parsed_list
-
     parsed_list = @emails.split(/[\s, ', ']/)
     parsed_list.delete_if{|a| a == ""}
     end
