@@ -15,7 +15,11 @@ attr_accessor :emails
   end
 
   def parse
-    parsed_list = @emails.split(", ")
+    if @emails.include? ", "
+      parsed_list = @emails.split(", ")
+    else
+      parsed_list = @emails.split(" ")
+    parsed_list  
 
   end
 
